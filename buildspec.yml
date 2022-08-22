@@ -6,7 +6,7 @@ phases:
     #run-as: ec2-user
     commands:
       - echo Build...
-      - chmod -R 777 /var/www/html
+      #- chmod -R 777 /var/www/html
       #- cd test
       - npm install
       #- ng build
@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - echo Post Build...
-      - cd /var/www/html
+      #- cd /var/www/html
       - ng build
       - rm -rf ./
       - cp -R ./dist/test/ ./
