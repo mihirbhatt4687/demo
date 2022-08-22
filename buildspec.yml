@@ -1,6 +1,16 @@
 version: 0.2
 
 
+phases:
+  build:
+    run-as: ubuntu
+    commands:
+      - echo Building...
+      - cd test
+      - npm install
+      - ng build
+
+
 artifacts:
   files:
     - '**/*'
