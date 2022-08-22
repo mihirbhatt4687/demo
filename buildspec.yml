@@ -8,7 +8,7 @@ phases:
       - echo Building...
       #- cd test
       - npm install
-      - ng build
+      #- ng build
 
 
 artifacts:
