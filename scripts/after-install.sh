@@ -2,7 +2,8 @@
 echo "Running after install..."
 sudo chmod -R 777 /var/www/html
 cd /var/www/html
-ls -al
+sudo touch log.txt
+ls -al > log.txt
 #ng build
 # rm -rf ./
 # cp -R ./dist/test/ ./
