@@ -5,7 +5,7 @@ echo "Running after install..."
 #sudo touch log.txt
 #sudo ls -al > log.txt
 cd /var/www/html
-mv ./dist/test/ ./
+mv ./test/* ./
 
 # rm -rf ./
 # cp -R ./dist/test/ ./
