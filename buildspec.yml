@@ -24,3 +24,10 @@ artifacts:
   # base-directory: base_dir
   # name: build-artifact-name
   # discard-paths: no
+
+  secondary-artifacts:
+    ARTIFACT1:  
+      base-directory: ./
+      files:
+        - appspec.yml
+      name: code_commit_configuration
