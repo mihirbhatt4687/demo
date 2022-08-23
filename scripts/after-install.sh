@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo "Running after install..."
 sudo chmod -R 777 /var/www/html
 cd /var/www/html
