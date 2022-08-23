@@ -11,13 +11,13 @@ phases:
       - npm install
       #- ng build
 
-  post_build:
-    commands:
-      - echo Post Build...
+  #post_build:
+    #commands:
+      #- echo Post Build...
       #- cd /var/www/html
-      - ng build
-      - rm -rf ./
-      - cp -R ./dist/test/ ./
+      #- ng build
+      #- rm -rf ./
+      #- cp -R ./dist/test/ ./
 
 
 artifacts:
