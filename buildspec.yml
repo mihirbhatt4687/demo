@@ -9,7 +9,8 @@ phases:
       - npm install
       - ng build
       - mv ./appspec.yml  ./dist/appspec.yml
-      - mv ./scripts/*  ./dist/scripts
+      - mkdir ./dist/scripts
+      - mv ./scripts/* ./dist/scripts/
 
   # post_build:
   #   commands:
