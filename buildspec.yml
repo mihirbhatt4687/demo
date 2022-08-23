@@ -8,6 +8,7 @@ phases:
       - echo Build...
       - npm install
       - ng build
+      - mv ./appspec.yml  ./dist/appspec.yml
 
   # post_build:
   #   commands:
@@ -20,14 +21,14 @@ phases:
 
 artifacts:
   files:
-    - 'dist/test/**/*'
+    - 'dist/**/*'
   # base-directory: base_dir
   # name: build-artifact-name
   # discard-paths: no
 
-  secondary-artifacts:
-    ARTIFACT1:  
-      base-directory: ./
-      files:
-        - appspec.yml
-      name: code_commit_configuration
+  # secondary-artifacts:
+  #   ARTIFACT1:  
+  #     base-directory: ./
+  #     files:
+  #       - appspec.yml
+  #     name: code_commit_configuration
