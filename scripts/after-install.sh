@@ -4,7 +4,7 @@ echo "Running after install..."
 # cd /var/www/html && ng build
 #sudo touch log.txt
 #sudo ls -al > log.txt
-
+cd /var/www/html
 mv ./dist/test/ ./
 
 # rm -rf ./
